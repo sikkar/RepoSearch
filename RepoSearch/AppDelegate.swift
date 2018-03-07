@@ -15,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let searchVC = SearchViewController.init(nibName: "SearchViewController", bundle: nil)
+        let searchNC = UINavigationController.init(rootViewController: searchVC)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = searchNC
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
