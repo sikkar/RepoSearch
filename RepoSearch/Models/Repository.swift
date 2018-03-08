@@ -10,13 +10,17 @@ import ObjectMapper
 
 struct Repository: Mappable {
     
-    var id: Int?
-    var name: String?
-    var owner: Owner?
-    var htmlUrl: String?
-    var language: String?
-    var size: Int?
-    var description: String?
+    var id: Int? = 0
+    var name: String? = ""
+    var owner: Owner? = nil
+    var htmlUrl: String? = ""
+    var language: String? = ""
+    var size: Int? = 0
+    var description: String? = ""
+    
+    init() {
+        
+    }
     
     init?(map: Map) {
         

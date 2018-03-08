@@ -16,9 +16,17 @@
 		4FF341CE2050297F000CD2AC /* PublicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341CD2050297F000CD2AC /* PublicRepository.swift */; };
 		4FF341D0205029A0000CD2AC /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341CF205029A0000CD2AC /* Repository.swift */; };
 		4FF341D220502F12000CD2AC /* RepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341D120502F12000CD2AC /* RepositoryService.swift */; };
-		4FF341D420502F30000CD2AC /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341D320502F30000CD2AC /* RepositoryViewModel.swift */; };
+		4FF341D420502F30000CD2AC /* PublicRepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341D320502F30000CD2AC /* PublicRepositoryViewModel.swift */; };
 		4FF341D820502F67000CD2AC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341D620502F67000CD2AC /* SearchViewController.swift */; };
 		4FF341D920502F67000CD2AC /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF341D720502F67000CD2AC /* SearchViewController.xib */; };
+		4FF341DC20512AE3000CD2AC /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341DB20512AE3000CD2AC /* StringExt.swift */; };
+		4FF341E02051305C000CD2AC /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341DE2051305C000CD2AC /* SearchTableViewCell.swift */; };
+		4FF341E12051305C000CD2AC /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF341DF2051305C000CD2AC /* SearchTableViewCell.xib */; };
+		4FF341E5205144E2000CD2AC /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341E4205144E2000CD2AC /* LoadingOverlay.swift */; };
+		4FF341E920514954000CD2AC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341E720514954000CD2AC /* DetailViewController.swift */; };
+		4FF341EA20514954000CD2AC /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF341E820514954000CD2AC /* DetailViewController.xib */; };
+		4FF341EC2051610D000CD2AC /* PagingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341EB2051610D000CD2AC /* PagingHandler.swift */; };
+		4FF341EE205162E8000CD2AC /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF341ED205162E8000CD2AC /* RepositoryViewModel.swift */; };
 		CC4A4CEF621A1AAFF6E3763D /* Pods_RepoSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37BA146E54B70FB6096FF7F /* Pods_RepoSearchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,9 +56,17 @@
 		4FF341CD2050297F000CD2AC /* PublicRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicRepository.swift; sourceTree = "<group>"; };
 		4FF341CF205029A0000CD2AC /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		4FF341D120502F12000CD2AC /* RepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryService.swift; sourceTree = "<group>"; };
-		4FF341D320502F30000CD2AC /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
+		4FF341D320502F30000CD2AC /* PublicRepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicRepositoryViewModel.swift; sourceTree = "<group>"; };
 		4FF341D620502F67000CD2AC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4FF341D720502F67000CD2AC /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		4FF341DB20512AE3000CD2AC /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		4FF341DE2051305C000CD2AC /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		4FF341DF2051305C000CD2AC /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		4FF341E4205144E2000CD2AC /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		4FF341E720514954000CD2AC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4FF341E820514954000CD2AC /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		4FF341EB2051610D000CD2AC /* PagingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingHandler.swift; sourceTree = "<group>"; };
+		4FF341ED205162E8000CD2AC /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		A37BA146E54B70FB6096FF7F /* Pods_RepoSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AAF53A2A12C461A6DE6C4C /* Pods-RepoSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RepoSearch/Pods-RepoSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		A7BB274EAD4BEB1C0F0C0DA5 /* Pods-RepoSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RepoSearchTests/Pods-RepoSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +129,7 @@
 				4FF341C520502682000CD2AC /* Services */,
 				4FF341C820502682000CD2AC /* ViewModels */,
 				4FF341C620502682000CD2AC /* Views */,
+				4FF341DA20512ACC000CD2AC /* Utils */,
 				4FF341AC20500B85000CD2AC /* Assets.xcassets */,
 				4FF341AE20500B85000CD2AC /* LaunchScreen.storyboard */,
 				4FF341B120500B85000CD2AC /* Info.plist */,
@@ -140,6 +157,8 @@
 		4FF341C620502682000CD2AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4FF341E620514942000CD2AC /* Detail */,
+				4FF341E3205144E2000CD2AC /* ViewUtils */,
 				4FF341D520502F4A000CD2AC /* Search */,
 			);
 			path = Views;
@@ -158,7 +177,8 @@
 		4FF341C820502682000CD2AC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				4FF341D320502F30000CD2AC /* RepositoryViewModel.swift */,
+				4FF341D320502F30000CD2AC /* PublicRepositoryViewModel.swift */,
+				4FF341ED205162E8000CD2AC /* RepositoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -166,10 +186,46 @@
 		4FF341D520502F4A000CD2AC /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				4FF341DD20513044000CD2AC /* Cells */,
 				4FF341D620502F67000CD2AC /* SearchViewController.swift */,
 				4FF341D720502F67000CD2AC /* SearchViewController.xib */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		4FF341DA20512ACC000CD2AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4FF341DB20512AE3000CD2AC /* StringExt.swift */,
+				4FF341EB2051610D000CD2AC /* PagingHandler.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4FF341DD20513044000CD2AC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4FF341DE2051305C000CD2AC /* SearchTableViewCell.swift */,
+				4FF341DF2051305C000CD2AC /* SearchTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4FF341E3205144E2000CD2AC /* ViewUtils */ = {
+			isa = PBXGroup;
+			children = (
+				4FF341E4205144E2000CD2AC /* LoadingOverlay.swift */,
+			);
+			path = ViewUtils;
+			sourceTree = "<group>";
+		};
+		4FF341E620514942000CD2AC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4FF341E720514954000CD2AC /* DetailViewController.swift */,
+				4FF341E820514954000CD2AC /* DetailViewController.xib */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		AF97DBD430D7515ADD806761 /* Pods */ = {
@@ -273,6 +329,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FF341B020500B85000CD2AC /* LaunchScreen.storyboard in Resources */,
+				4FF341E12051305C000CD2AC /* SearchTableViewCell.xib in Resources */,
+				4FF341EA20514954000CD2AC /* DetailViewController.xib in Resources */,
 				4FF341AD20500B85000CD2AC /* Assets.xcassets in Resources */,
 				4FF341D920502F67000CD2AC /* SearchViewController.xib in Resources */,
 			);
@@ -297,12 +355,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-RepoSearch/Pods-RepoSearch-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,12 +458,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF341E920514954000CD2AC /* DetailViewController.swift in Sources */,
+				4FF341EE205162E8000CD2AC /* RepositoryViewModel.swift in Sources */,
+				4FF341E02051305C000CD2AC /* SearchTableViewCell.swift in Sources */,
 				4FF341CE2050297F000CD2AC /* PublicRepository.swift in Sources */,
 				4FF341D820502F67000CD2AC /* SearchViewController.swift in Sources */,
+				4FF341E5205144E2000CD2AC /* LoadingOverlay.swift in Sources */,
+				4FF341DC20512AE3000CD2AC /* StringExt.swift in Sources */,
 				4FF341D0205029A0000CD2AC /* Repository.swift in Sources */,
 				4FF341D220502F12000CD2AC /* RepositoryService.swift in Sources */,
-				4FF341D420502F30000CD2AC /* RepositoryViewModel.swift in Sources */,
+				4FF341D420502F30000CD2AC /* PublicRepositoryViewModel.swift in Sources */,
 				4FF341CC20502761000CD2AC /* Owner.swift in Sources */,
+				4FF341EC2051610D000CD2AC /* PagingHandler.swift in Sources */,
 				4FF341A620500B85000CD2AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,10 +10,10 @@ import ObjectMapper
 
 struct Owner: Mappable {
     
-    var id: Int?
-    var name: String?
-    var avatar: String?
-    var profileUrl: String?
+    var id: Int? = 0
+    var name: String? = ""
+    var avatar: String? = ""
+    var profileUrl: String? = ""
     
     init?(map: Map) {
         
@@ -21,7 +21,8 @@ struct Owner: Mappable {
     
     mutating func mapping(map: Map) {
         self.id <- map["id"]
-        self.name <- map["name"]
+        self.name <- map["login"]
         self.profileUrl <- map["html_url"]
+        self.avatar <- map["avatar_url"]
     }
 }

@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="RepoSearch" customModuleProvider="target">
             <connections>
+                <outlet property="reposTableView" destination="DrE-h2-icK" id="BAO-RO-dN3"/>
+                <outlet property="searchTextField" destination="MHB-VP-uq7" id="Od1-vV-RNI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,7 +21,52 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAB-ya-7Wa">
+                    <rect key="frame" x="0.0" y="20" width="375" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MHB-VP-uq7">
+                            <rect key="frame" x="10" y="15" width="292" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oU-l8-YXc">
+                            <rect key="frame" x="312" y="15" width="48" height="30"/>
+                            <accessibility key="accessibilityConfiguration" label="Search"/>
+                            <state key="normal" title="Search"/>
+                            <connections>
+                                <action selector="searchButtonPressed:" destination="-1" eventType="touchUpInside" id="3gc-UQ-WAX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="G4l-Ko-GNb"/>
+                        <constraint firstAttribute="trailing" secondItem="4oU-l8-YXc" secondAttribute="trailing" constant="15" id="JsO-3I-U1h"/>
+                        <constraint firstItem="MHB-VP-uq7" firstAttribute="top" secondItem="nAB-ya-7Wa" secondAttribute="top" constant="15" id="QGp-AF-pUs"/>
+                        <constraint firstItem="4oU-l8-YXc" firstAttribute="top" secondItem="nAB-ya-7Wa" secondAttribute="top" constant="15" id="TaZ-qM-orG"/>
+                        <constraint firstAttribute="bottom" secondItem="MHB-VP-uq7" secondAttribute="bottom" constant="15" id="TyD-bm-QSg"/>
+                        <constraint firstItem="MHB-VP-uq7" firstAttribute="leading" secondItem="nAB-ya-7Wa" secondAttribute="leading" constant="10" id="aWn-UI-KJs"/>
+                        <constraint firstItem="4oU-l8-YXc" firstAttribute="leading" secondItem="MHB-VP-uq7" secondAttribute="trailing" constant="10" id="hEW-Bg-W9R"/>
+                        <constraint firstAttribute="bottom" secondItem="4oU-l8-YXc" secondAttribute="bottom" constant="15" id="q9d-yn-JIz"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DrE-h2-icK">
+                    <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DrE-h2-icK" firstAttribute="top" secondItem="nAB-ya-7Wa" secondAttribute="bottom" id="532-5x-woR"/>
+                <constraint firstItem="nAB-ya-7Wa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LSh-oB-aOV"/>
+                <constraint firstItem="DrE-h2-icK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="U2C-B4-wHN"/>
+                <constraint firstItem="nAB-ya-7Wa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c0F-6d-Lkj"/>
+                <constraint firstItem="nAB-ya-7Wa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eXc-xA-qgk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DrE-h2-icK" secondAttribute="bottom" id="fSm-v2-nfQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DrE-h2-icK" secondAttribute="trailing" id="mt7-qm-u1c"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

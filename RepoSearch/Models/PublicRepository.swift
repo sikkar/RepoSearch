@@ -10,10 +10,11 @@ import ObjectMapper
 
 struct PublicRepository: Mappable {
     
-    var id: Int?
-    var name: String?
-    var htmlUrl: String?
-    var apiUrl: String?
+    var id: Int? = 0
+    var name: String? = ""
+    var htmlUrl: String? = ""
+    var apiUrl: String? = ""
+    var description: String? = ""
     
     init?(map: Map) {
         
@@ -24,6 +25,7 @@ struct PublicRepository: Mappable {
         self.name <- map["name"]
         self.htmlUrl <- map["html_url"]
         self.apiUrl <- map["url"]
+        self.description <- map["description"]
     }
     
 }
